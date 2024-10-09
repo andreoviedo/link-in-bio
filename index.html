@@ -1,7 +1,17 @@
 <style>
+  html {
+    min-height: 100%;
+    color: rgba(255, 255, 255, 1.0);
+  }
   body {
+    min-height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+    background: linear-gradient(180deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+    font-family: "Impact";
+  }
+  a {
+  color: rgba(255, 255, 255, 1.0);
   }
   .avatar-image {
     width: 128px;
@@ -10,12 +20,43 @@
     border-radius: 128px;
   }
   .thumbnail {
-  width: 48px;
-  height: 48px;
-  border-radius: 48px;
-  object-fit: cover;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    object-fit: cover;
+  }
+  .item {
+    background-color: rgba(149, 123, 173, 0.5);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .main-container {
+    max-width: 640px;
+    margin: auto;
+  }
+  .image-row {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .name-row {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .social-icons-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .link-text {
+  text-align: center;
+  flex-grow: 1;
   }
 </style>
+
+<head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
   <div class="main-container">
@@ -49,7 +90,7 @@
       <div class="item">
         <img class="thumbnail" src="/thumbnails/yc.png">
 
-        <a target="_blank" href="http://paulgraham.com/startupideas.html">
+        <a class="link-text" target="_blank" href="http://paulgraham.com/startupideas.html">
           How to Get Startup Ideas
         </a>
       </div>
@@ -57,7 +98,7 @@
       <div class="item">
         <img class="thumbnail" src="/thumbnails/typography.jpg">
 
-        <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
+        <a class="link-text" target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
           Typography in ten minutes
         </a>
       </div>
